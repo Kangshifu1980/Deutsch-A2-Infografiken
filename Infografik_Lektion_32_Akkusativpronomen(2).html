@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A2 — Infografik — Lektion 32</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:0}
+body{font-family:'Segoe UI',Arial,sans-serif;font-size:11px;line-height:1.28;color:#1a1a1a;background:#f5f5f5}
+.page{background:#fff;width:210mm;min-height:297mm;margin:12px auto;padding:9mm 13mm 6mm;box-shadow:0 2px 8px rgba(0,0,0,.12);overflow:hidden}
+.doc-header{border-bottom:2.5px solid #1e293b;padding-bottom:4px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:flex-end}
+.doc-header h1{font-size:17px;font-weight:700;color:#1e293b}
+.doc-header h2{font-size:10.5px;font-weight:500;color:#475569;margin-top:1px}
+.badge{font-size:9.5px;font-weight:600;background:#e2e8f0;color:#1e293b;padding:2px 9px;border-radius:20px;white-space:nowrap}
+.section-title{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#fff;padding:3px 8px;border-radius:4px 4px 0 0;margin-top:5px}
+.section-body{border:1px solid;border-top:none;border-radius:0 0 6px 6px;padding:5px 8px;margin-bottom:2px}
+
+.c-verben .section-title{background:#2563eb}.c-verben .section-body{border-color:#93c5fd;background:#eff6ff}
+.c-grammatik .section-title{background:#16a34a}.c-grammatik .section-body{border-color:#86efac;background:#f0fdf4}
+.c-satzbau .section-title{background:#ca8a04}.c-satzbau .section-body{border-color:#fde68a;background:#fffbeb}
+.c-woerter .section-title{background:#ea580c}.c-woerter .section-body{border-color:#fed7aa;background:#fff7ed}
+.c-achtung .section-title{background:#dc2626}.c-achtung .section-body{border-color:#fecaca;background:#fef2f2}
+.c-beispiele .section-title{background:#7c3aed}.c-beispiele .section-body{border-color:#ddd6fe;background:#faf5ff}
+
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.chip{background:#fff;border:1px solid #93c5fd;border-radius:6px;padding:4px 5px;font-size:9.2px;text-align:center}
+.chip strong{color:#1e3a8a}.chip .vn{display:block;color:#475569;font-size:8.2px;margin-top:1px}
+
+.rule{border-left:3px solid #16a34a;background:#fff;border-radius:0 6px 6px 0;padding:4px 7px;margin-bottom:4px;font-size:9.6px}
+.rule strong{color:#15803d}
+.pron-table{width:100%;border-collapse:collapse;background:#fff}
+.pron-table th{background:#dcfce7;color:#166534;font-size:8.9px;padding:3px;border:1px solid #86efac}
+.pron-table td{text-align:center;font-size:9px;padding:3px;border:1px solid #bbf7d0}
+.pron-table b{color:#166534}
+.memory{margin-top:4px;background:#fff;border:1px solid #86efac;border-radius:6px;padding:4px 7px;font-size:9px}
+.memory .vn{color:#047857;font-size:8.5px}
+
+.satz-legende{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;font-size:8.8px}
+.leg{display:flex;align-items:center;gap:4px}.sw{width:10px;height:10px;border-radius:3px}
+.s1{background:#60a5fa}.s2{background:#4ade80}.s3{background:#fbbf24}.s4{background:#f87171}
+
+.sentence-group{background:#fff;border:1px solid #fde68a;border-radius:7px;padding:4px 6px;margin:4px 0}
+.group-label{font-size:8.6px;color:#92400e;font-weight:700;margin-bottom:2px}
+.satz-row{display:flex;align-items:stretch;margin:2px 0;font-size:9.15px;flex-wrap:wrap}
+.cell{padding:2px 5px;border:1px solid rgba(0,0,0,.08);font-weight:600}
+.haupt{background:#bfdbfe}.konj{background:#bbf7d0}.mittel{background:#fef08a}.ende{background:#fecaca}
+.neutral{background:#f8fafc;font-weight:500}
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:4px}
+.formula div{background:#fff;border:1px solid #fde68a;border-radius:6px;padding:4px 6px;font-size:9px}
+.formula b{color:#92400e}
+
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.comm-card{background:#fff;border:1px solid #fdba74;border-radius:6px;padding:4px 6px;font-size:9.1px}
+.comm-card h4{font-size:9.3px;color:#9a3412;margin-bottom:2px}
+.pillrow{display:flex;flex-wrap:wrap;gap:3px}
+.pill{background:#fff;border:1px solid #fdba74;border-radius:5px;padding:1.5px 5px;font-size:8.7px}
+
+.error{border:.5px solid #fecaca;border-radius:6px;padding:3px 7px;margin-bottom:3px;background:#fff;font-size:9.3px}
+.error .row{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.bad{color:#b91c1c}.good{color:#15803d}
+.why{font-size:8.3px;color:#7f1d1d;margin-top:1px}
+
+.examples{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.ex{border:.5px solid #ddd6fe;border-radius:6px;padding:4px 7px;font-size:9px;background:#fff;color:#4c1d95}
+.ex .vn{display:block;color:#6d28d9;font-size:8.3px;margin-top:1px}
+
+.footer{margin-top:5px;padding-top:3px;border-top:.5px solid #e2e8f0;font-size:8.3px;color:#94a3b8;display:flex;justify-content:space-between}
+@media print{
+  body{margin:0;background:#fff}
+  .page{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:297mm;max-height:297mm;page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A2 — Infografik</h1>
+      <h2>Lektion 32 — Personalpronomen im Akkusativ · Đại từ nhân xưng ở Akkusativ</h2>
+    </div>
+    <div class="badge">A2 · Lektion 32</div>
+  </div>
+
+  <div class="c-verben">
+    <div class="section-title">🟦 Thema / Wortschatz / Redemittel</div>
+    <div class="section-body">
+      <div class="grid4">
+        <div class="chip"><strong>jemanden anrufen</strong><span class="vn">gọi điện cho ai</span></div>
+        <div class="chip"><strong>jemanden treffen</strong><span class="vn">gặp ai</span></div>
+        <div class="chip"><strong>jemanden besuchen</strong><span class="vn">thăm ai</span></div>
+        <div class="chip"><strong>jemanden einladen</strong><span class="vn">mời ai</span></div>
+        <div class="chip"><strong>jemanden kennen</strong><span class="vn">biết / quen ai</span></div>
+        <div class="chip"><strong>jemanden brauchen</strong><span class="vn">cần ai</span></div>
+        <div class="chip"><strong>Wen oder was?</strong><span class="vn">Ai hoặc cái gì?</span></div>
+        <div class="chip"><strong>Ich kenne ihn.</strong><span class="vn">Tôi biết anh ấy.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-grammatik">
+    <div class="section-title">🟩 Grammatik kompakt</div>
+    <div class="section-body">
+      <div class="rule">Ein <strong>Akkusativpronomen</strong> ersetzt eine bereits bekannte Person oder Sache als direktes Objekt. Frage: <strong>Wen oder was?</strong><br><span style="color:#047857">Đại từ Akkusativ thay thế người hoặc vật đã được nhắc đến và làm tân ngữ trực tiếp.</span></div>
+      <table class="pron-table">
+        <tr><th>Nominativ</th><th>ich</th><th>du</th><th>er</th><th>sie</th><th>es</th><th>wir</th><th>ihr</th><th>sie / Sie</th></tr>
+        <tr><th>Akkusativ</th><td><b>mich</b></td><td><b>dich</b></td><td><b>ihn</b></td><td><b>sie</b></td><td><b>es</b></td><td><b>uns</b></td><td><b>euch</b></td><td><b>sie / Sie</b></td></tr>
+      </table>
+      <div class="memory"><b>Merke:</b> Nenne die Person oder Sache zuerst mit einem Nomen. Danach kannst du sie mit einem Akkusativpronomen wiederaufnehmen.<br><span class="vn">Ghi nhớ: Trước tiên nêu danh từ, sau đó dùng đại từ Akkusativ để nhắc lại.</span></div>
+    </div>
+  </div>
+
+  <div class="c-satzbau">
+    <div class="section-title">🟨 Satzbau</div>
+    <div class="section-body">
+      <div class="satz-legende">
+        <span class="leg"><span class="sw s1"></span>Subjekt</span>
+        <span class="leg"><span class="sw s2"></span>Verb</span>
+        <span class="leg"><span class="sw s3"></span>Akkusativpronomen</span>
+        <span class="leg"><span class="sw s4"></span>Ergänzung / Verbteil</span>
+      </div>
+
+      <div class="sentence-group">
+        <div class="group-label">Person: Anna</div>
+        <div class="satz-row"><div class="cell neutral">Das ist Anna.</div></div>
+        <div class="satz-row"><div class="cell haupt">Ich</div><div class="cell konj">kenne</div><div class="cell mittel">sie.</div></div>
+        <div class="satz-row"><div class="cell haupt">Ich</div><div class="cell konj">treffe</div><div class="cell mittel">sie</div><div class="cell ende">morgen.</div></div>
+      </div>
+
+      <div class="sentence-group">
+        <div class="group-label">Person: Herr Becker</div>
+        <div class="satz-row"><div class="cell neutral">Das ist Herr Becker.</div></div>
+        <div class="satz-row"><div class="cell haupt">Ich</div><div class="cell konj">rufe</div><div class="cell mittel">ihn</div><div class="cell ende">heute an.</div></div>
+        <div class="satz-row"><div class="cell haupt">Ich</div><div class="cell konj">sehe</div><div class="cell mittel">ihn</div><div class="cell ende">im Büro.</div></div>
+      </div>
+
+      <div class="sentence-group">
+        <div class="group-label">Sache: das Handy</div>
+        <div class="satz-row"><div class="cell neutral">Das ist das Handy.</div></div>
+        <div class="satz-row"><div class="cell haupt">Ich</div><div class="cell konj">brauche</div><div class="cell mittel">es</div><div class="cell ende">jetzt.</div></div>
+        <div class="satz-row"><div class="cell haupt">Ich</div><div class="cell konj">suche</div><div class="cell mittel">es</div><div class="cell ende">schon lange.</div></div>
+      </div>
+
+      <div class="formula">
+        <div><b>Hauptsatz:</b> Subjekt + Verb + Akkusativpronomen (+ Ergänzung).<br><span style="color:#047857">Chủ ngữ + động từ + đại từ Akkusativ.</span></div>
+        <div><b>Trennbares Verb:</b> Ich rufe <b>ihn</b> heute <b>an</b>.<br><span style="color:#047857">Phần tách đứng cuối câu.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-woerter">
+    <div class="section-title">🟧 Kommunikation</div>
+    <div class="section-body">
+      <div class="comm-grid">
+        <div class="comm-card">
+          <h4>Nach Personen oder Dingen fragen</h4>
+          <div class="pillrow">
+            <span class="pill">Wen kennst du?</span>
+            <span class="pill">Wen rufst du an?</span>
+            <span class="pill">Wen besuchst du?</span>
+            <span class="pill">Was brauchst du?</span>
+          </div>
+        </div>
+        <div class="comm-card">
+          <h4>Antworten</h4>
+          <div>Ich kenne <b>ihn</b>.<br>Ich treffe <b>sie</b> morgen.<br>Ich brauche <b>es</b> heute.<br>Wir laden <b>euch</b> ein.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-achtung">
+    <div class="section-title">🟥 Typische Fehler</div>
+    <div class="section-body">
+      <div class="error">
+        <div class="row"><span class="bad">❌ Ich kenne er.</span><span class="good">✅ Ich kenne ihn.</span></div>
+        <div class="why">Nach <b>kennen</b> steht hier ein Akkusativobjekt. / Sau <b>kennen</b> dùng Akkusativ.</div>
+      </div>
+      <div class="error">
+        <div class="row"><span class="bad">❌ Ich rufe sie an heute.</span><span class="good">✅ Ich rufe sie heute an.</span></div>
+        <div class="why">Bei trennbaren Verben steht der zweite Verbteil am Satzende. / Phần tách đứng cuối câu.</div>
+      </div>
+      <div class="error">
+        <div class="row"><span class="bad">❌ Ich sehe du.</span><span class="good">✅ Ich sehe dich.</span></div>
+        <div class="why">Das Pronomen muss im Akkusativ stehen. / Đại từ phải ở Akkusativ.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-beispiele">
+    <div class="section-title">🟪 Beispiele</div>
+    <div class="section-body">
+      <div class="examples">
+        <div class="ex">Das ist Anna. Ich kenne sie. Ich treffe sie morgen.<span class="vn">Đây là Anna. Tôi biết cô ấy. Ngày mai tôi gặp cô ấy.</span></div>
+        <div class="ex">Das ist Herr Becker. Ich rufe ihn heute an. Ich sehe ihn später im Büro.<span class="vn">Đây là ông Becker. Hôm nay tôi gọi cho ông ấy. Sau đó tôi gặp ông ấy ở văn phòng.</span></div>
+        <div class="ex">Das ist das Formular. Ich brauche es. Ich finde es nicht.<span class="vn">Đây là mẫu đơn. Tôi cần nó. Tôi không tìm thấy nó.</span></div>
+        <div class="ex">Das sind unsere Nachbarn. Wir besuchen sie morgen. Wir laden sie am Wochenende ein.<span class="vn">Đó là hàng xóm của chúng tôi. Ngày mai chúng tôi thăm họ. Cuối tuần chúng tôi mời họ.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Deutsch A2 · Lektion 32 · Infografik</span><span>Seite 1 / 1</span></div>
+</div>
+</body>
+</html>

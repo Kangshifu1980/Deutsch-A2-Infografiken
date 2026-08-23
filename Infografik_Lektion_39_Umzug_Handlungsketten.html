@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A2 — Infografik — Lektion 39</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:0}
+body{font-family:'Segoe UI',Arial,sans-serif;font-size:11px;line-height:1.28;color:#1a1a1a;background:#f5f5f5}
+.page{background:#fff;width:210mm;min-height:297mm;margin:12px auto;padding:9mm 13mm 6mm;box-shadow:0 2px 8px rgba(0,0,0,.12);overflow:hidden}
+.doc-header{border-bottom:2.5px solid #1e293b;padding-bottom:4px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:flex-end}
+.doc-header h1{font-size:17px;font-weight:700;color:#1e293b}
+.doc-header h2{font-size:10.5px;font-weight:500;color:#475569;margin-top:1px}
+.badge{font-size:9.5px;font-weight:600;background:#e2e8f0;color:#1e293b;padding:2px 9px;border-radius:20px;white-space:nowrap}
+
+.section-title{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#fff;padding:3px 8px;border-radius:4px 4px 0 0;margin-top:5px}
+.section-body{border:1px solid;border-top:none;border-radius:0 0 6px 6px;padding:5px 8px;margin-bottom:2px}
+
+.c-verben .section-title{background:#2563eb}.c-verben .section-body{border-color:#93c5fd;background:#eff6ff}
+.c-grammatik .section-title{background:#16a34a}.c-grammatik .section-body{border-color:#86efac;background:#f0fdf4}
+.c-satzbau .section-title{background:#ca8a04}.c-satzbau .section-body{border-color:#fde68a;background:#fffbeb}
+.c-woerter .section-title{background:#ea580c}.c-woerter .section-body{border-color:#fed7aa;background:#fff7ed}
+.c-achtung .section-title{background:#dc2626}.c-achtung .section-body{border-color:#fecaca;background:#fef2f2}
+.c-beispiele .section-title{background:#7c3aed}.c-beispiele .section-body{border-color:#ddd6fe;background:#faf5ff}
+
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.chip{background:#fff;border:1px solid #93c5fd;border-radius:6px;padding:4px 5px;font-size:9.15px;text-align:center}
+.chip strong{color:#1e3a8a}.chip .vn{display:block;color:#475569;font-size:8.15px;margin-top:1px}
+
+.rule{border-left:3px solid #16a34a;background:#fff;border-radius:0 6px 6px 0;padding:4px 7px;margin-bottom:4px;font-size:9.55px}
+.rule strong{color:#15803d}
+.sequence{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr;gap:4px;align-items:stretch;margin-top:4px}
+.seq{background:#fff;border:1px solid #86efac;border-radius:7px;padding:5px 6px;font-size:8.9px}
+.seq h4{font-size:9.2px;margin-bottom:2px}
+.seq.blue{border-color:#93c5fd;background:#eff6ff}.seq.blue h4{color:#1d4ed8}
+.seq.orange{border-color:#fdba74;background:#fff7ed}.seq.orange h4{color:#c2410c}
+.seq.green{border-color:#86efac;background:#f0fdf4}.seq.green h4{color:#166534}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#64748b}
+
+.satz-legende{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;font-size:8.8px}
+.leg{display:flex;align-items:center;gap:4px}.sw{width:10px;height:10px;border-radius:3px}
+.s1{background:#60a5fa}.s2{background:#4ade80}.s3{background:#fbbf24}.s4{background:#f87171}
+.satz-row{display:flex;align-items:stretch;margin:2px 0;font-size:9px;flex-wrap:wrap}
+.cell{padding:2px 5px;border:1px solid rgba(0,0,0,.08);font-weight:600}
+.haupt{background:#bfdbfe}.konj{background:#bbf7d0}.mittel{background:#fef08a}.ende{background:#fecaca}
+.formula{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:4px}
+.formula div{background:#fff;border:1px solid #fde68a;border-radius:6px;padding:4px 6px;font-size:8.9px}
+.formula b{color:#92400e}
+
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.comm-card{background:#fff;border:1px solid #fdba74;border-radius:6px;padding:4px 6px;font-size:9px}
+.comm-card h4{font-size:9.25px;color:#9a3412;margin-bottom:2px}
+.pillrow{display:flex;flex-wrap:wrap;gap:3px}
+.pill{background:#fff;border:1px solid #fdba74;border-radius:5px;padding:1.5px 5px;font-size:8.55px}
+
+.error{border:.5px solid #fecaca;border-radius:6px;padding:3px 7px;margin-bottom:3px;background:#fff;font-size:9.15px}
+.error .row{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.bad{color:#b91c1c}.good{color:#15803d}
+.why{font-size:8.2px;color:#7f1d1d;margin-top:1px}
+
+.examples{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.ex{border:.5px solid #ddd6fe;border-radius:6px;padding:4px 7px;font-size:8.9px;background:#fff;color:#4c1d95}
+.ex .vn{display:block;color:#6d28d9;font-size:8.2px;margin-top:1px}
+
+.footer{margin-top:5px;padding-top:3px;border-top:.5px solid #e2e8f0;font-size:8.3px;color:#94a3b8;display:flex;justify-content:space-between}
+@media print{
+  body{margin:0;background:#fff}
+  .page{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:297mm;max-height:297mm;page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A2 — Infografik</h1>
+      <h2>Lektion 39 — Umzug und Einrichtung · Chuyển nhà và sắp xếp nội thất</h2>
+    </div>
+    <div class="badge">A2 · Lektion 39</div>
+  </div>
+
+  <div class="c-verben">
+    <div class="section-title">🟦 Umzug — Kernwortschatz</div>
+    <div class="section-body">
+      <div class="grid4">
+        <div class="chip"><strong>der Umzug</strong><span class="vn">việc chuyển nhà</span></div>
+        <div class="chip"><strong>die Kiste</strong><span class="vn">thùng / hộp</span></div>
+        <div class="chip"><strong>tragen</strong><span class="vn">mang / khiêng</span></div>
+        <div class="chip"><strong>transportieren</strong><span class="vn">vận chuyển</span></div>
+        <div class="chip"><strong>einpacken</strong><span class="vn">đóng gói</span></div>
+        <div class="chip"><strong>auspacken</strong><span class="vn">dỡ đồ</span></div>
+        <div class="chip"><strong>einräumen</strong><span class="vn">xếp / cất vào</span></div>
+        <div class="chip"><strong>aufbauen</strong><span class="vn">lắp dựng</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-grammatik">
+    <div class="section-title">🟩 Transfer — Handlungsketten</div>
+    <div class="section-body">
+      <div class="rule"><strong>Keine neue Kern-Grammatik:</strong> Bekannte Strukturen werden jetzt zu längeren Handlungsketten verbunden. <strong>Wo? → Dativ</strong>, <strong>Wohin? → Akkusativ</strong>, danach die neue Position wieder mit <strong>Wo? + Dativ</strong>.<br><span style="color:#047857">Không có ngữ pháp mới: kết hợp các cấu trúc đã biết thành chuỗi hành động.</span></div>
+
+      <div class="sequence">
+        <div class="seq blue"><h4>🔵 1. Alte Position</h4>Der Sessel steht <b>im Flur</b>.<br><b>Wo? → Dativ</b></div>
+        <div class="arrow">→</div>
+        <div class="seq orange"><h4>🟠 2. Veränderung</h4>Wir stellen <b>ihn ins Wohnzimmer</b>.<br><b>Wohin? → Akk.</b></div>
+        <div class="arrow">→</div>
+        <div class="seq green"><h4>🟢 3. Ergebnis</h4>Jetzt steht er <b>im Wohnzimmer</b>.<br><b>Wo? → wieder Dativ</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-satzbau">
+    <div class="section-title">🟨 Satzbau & Werkzeuge</div>
+    <div class="section-body">
+      <div class="satz-legende">
+        <span class="leg"><span class="sw s1"></span>Start / Zeit</span>
+        <span class="leg"><span class="sw s2"></span>Verb</span>
+        <span class="leg"><span class="sw s3"></span>Objekt / Ziel</span>
+        <span class="leg"><span class="sw s4"></span>Verbteil am Ende</span>
+      </div>
+      <div class="satz-row"><div class="cell haupt">Zuerst</div><div class="cell konj">tragen</div><div class="cell mittel">wir die Kisten ins Arbeitszimmer.</div></div>
+      <div class="satz-row"><div class="cell haupt">Dann</div><div class="cell konj">packen</div><div class="cell mittel">wir die Kisten</div><div class="cell ende">aus.</div></div>
+      <div class="satz-row"><div class="cell haupt">Danach</div><div class="cell konj">räumen</div><div class="cell mittel">wir die Bücher ins Regal</div><div class="cell ende">ein.</div></div>
+      <div class="satz-row"><div class="cell haupt">Zum Schluss</div><div class="cell konj">steht</div><div class="cell mittel">alles am neuen Platz.</div></div>
+
+      <div class="formula">
+        <div><b>Akkusativpronomen:</b> der Sessel → <b>ihn</b>, die Lampe → <b>sie</b>, das Regal → <b>es</b>, die Bücher → <b>sie</b>.</div>
+        <div><b>Begründung:</b> Wir stellen den Sessel ans Fenster, <b>weil dort mehr Licht ist</b>.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-woerter">
+    <div class="section-title">🟧 Umzug planen & Aufgaben verteilen</div>
+    <div class="section-body">
+      <div class="comm-grid">
+        <div class="comm-card">
+          <h4>Reihenfolge</h4>
+          <div class="pillrow">
+            <span class="pill">zuerst</span>
+            <span class="pill">dann</span>
+            <span class="pill">danach</span>
+            <span class="pill">zum Schluss</span>
+          </div>
+        </div>
+        <div class="comm-card">
+          <h4>Handeln & entscheiden</h4>
+          <div class="pillrow">
+            <span class="pill">Wer trägt …?</span>
+            <span class="pill">Wohin kommt …?</span>
+            <span class="pill">Dann packe ich … aus.</span>
+            <span class="pill">…, weil …</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-achtung">
+    <div class="section-title">🟥 Achtung — typische Fehler</div>
+    <div class="section-body">
+      <div class="error">
+        <div class="row"><div class="bad">✗ Wir stellen ihn im Wohnzimmer.</div><div class="good">✓ Wir stellen ihn ins Wohnzimmer.</div></div>
+        <div class="why">Veränderung / Ziel → Wohin? + Akkusativ.</div>
+      </div>
+      <div class="error">
+        <div class="row"><div class="bad">✗ Jetzt steht er ins Wohnzimmer.</div><div class="good">✓ Jetzt steht er im Wohnzimmer.</div></div>
+        <div class="why">Ergebnis ist wieder eine Position → Wo? + Dativ.</div>
+      </div>
+      <div class="error">
+        <div class="row"><div class="bad">✗ Danach wir packen die Kisten aus.</div><div class="good">✓ Danach packen wir die Kisten aus.</div></div>
+        <div class="why">Im Hauptsatz steht das konjugierte Verb auf Position 2; der trennbare Verbteil steht am Ende.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-beispiele">
+    <div class="section-title">🟪 Handlungsketten aus der Lektion</div>
+    <div class="section-body">
+      <div class="examples">
+        <div class="ex">Die Bücher liegen <b>auf dem Boden</b>. → Wir legen <b>sie ins Regal</b>. → Jetzt liegen sie <b>im Regal</b>.<span class="vn">Sách ở trên sàn → đặt vào kệ → bây giờ ở trong kệ.</span></div>
+        <div class="ex">Das Regal ist noch abgebaut. → Wir bringen <b>es ins Arbeitszimmer</b> und bauen es dort <b>auf</b>.<span class="vn">Kệ còn tháo rời → mang vào phòng làm việc và lắp lên.</span></div>
+        <div class="ex">Die Kisten stehen im Flur. → Ich trage <b>sie ins Arbeitszimmer</b>. → Dort packe ich sie <b>aus</b>.<span class="vn">Các thùng ở hành lang → mang vào phòng làm việc → dỡ đồ ở đó.</span></div>
+        <div class="ex">Wir stellen den Sessel <b>ans Fenster</b>, <b>weil dort mehr Licht ist</b>.<span class="vn">Chúng ta đặt ghế cạnh cửa sổ vì ở đó có nhiều ánh sáng hơn.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Deutsch A2 · Infografik · Lektion 39</span><span>1 Seite · DE/VN</span></div>
+</div>
+</body>
+</html>
