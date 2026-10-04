@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>L32 · Kontakte und Missverständnisse</title>
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:#dce7e6;color:#183033;
+  font-family:Arial,"Segoe UI",sans-serif;
+  font-size:8.75pt;line-height:1.17
+}
+.page{
+  width:210mm;height:297mm;background:#fff;margin:0 auto;
+  padding:6mm 10mm 4mm;overflow:hidden
+}
+header{border-bottom:3px solid #0f766e;padding-bottom:2mm;position:relative}
+.eyebrow{font-size:8pt;letter-spacing:.9px;color:#0f766e;font-weight:700}
+h1{font-size:20.5pt;line-height:1.08;margin:1.3mm 0 .8mm;color:#183033}
+.subtitle{font-size:10.5pt;color:#426d68}
+.badge{position:absolute;right:0;top:0;border-radius:7px;background:#0f766e;color:#fff;padding:1.5mm 2.6mm;font-weight:700}
+section{margin-top:1.1mm}
+h2{font-size:10.4pt;color:#0f5f59;margin:0 0 .9mm}
+h3{font-size:9.7pt;margin:0 0 .5mm}
+p{margin:.45mm 0}
+.vn{font-size:8.45pt;color:#426d68}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:2mm}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8mm}
+.card{border:1px solid #bad6d0;border-radius:7px;padding:1.35mm 2mm;background:#f3faf8}
+.blue{background:#f0f6fc;border-color:#b8cfe4}
+.gold{background:#fff9ed;border-color:#e6d2a5}
+.orange{background:#fff6ef;border-color:#ead0b7}
+.key{display:inline-block;border-radius:4px;padding:.35mm 1.1mm;font-weight:700}
+.subj{background:#dcecfb;color:#164c79}
+.obj{background:#fff0cc;color:#754c00}
+.poss{background:#eee5f8;color:#683b91}
+table{width:100%;border-collapse:collapse;font-size:8.25pt}
+th,td{border-bottom:1px solid #d2e1dd;padding:.7mm 1.7mm;text-align:left;vertical-align:top}
+th{background:#e5f2ee;color:#0f5f59}
+.center{text-align:center}
+.rule{background:#f3faf8;border:1px solid #c5ddd8;border-radius:6px;padding:1.3mm 2mm}
+.chain{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:1.4mm;align-items:center;margin:.7mm 0}
+.chain div{padding:1mm 1.5mm;border-radius:5px;text-align:center;background:#f1f5f4}
+.chain .a{background:#dcecfb;color:#164c79;font-weight:700}
+.chain .b{background:#fff0cc;color:#754c00;font-weight:700}
+.arrow{font-size:13pt;color:#0f766e;text-align:center}
+.example{border-left:3px solid #0f766e;background:#f3faf8;padding:1.2mm 2mm}
+.badexample{border-left:3px solid #b45309;background:#fff6ef;padding:1.2mm 2mm}
+.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.7mm}
+.q{border:1px solid #bad6d0;border-radius:6px;background:#fff;padding:1.2mm 1.8mm}
+.dialog{display:grid;grid-template-columns:1fr 1fr;gap:1.7mm}
+.bubble{border:1px solid #bad6d0;border-radius:7px;padding:1.25mm 1.8mm;background:#fff}
+.bubble strong{color:#0f5f59}
+.note{background:#fff6ef;border:1px solid #ead0b7;border-radius:7px;padding:1.3mm 2mm}
+.workflow{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2mm}
+.step{border-top:3px solid #0f766e;background:#f3faf8;padding:1.1mm 1.4mm;text-align:center}
+.step b{display:block;color:#0f5f59}
+.check{border-top:1px solid #bad6d0;padding-top:1mm;margin-top:1mm}
+footer{display:flex;justify-content:space-between;margin-top:1.2mm;color:#58756f;font-size:7.8pt}
+
+/* Lesbarkeit entsprechend L30; den verfügbaren Raum nutzen. */
+body{font-size:10pt;line-height:1.23}
+.vn{font-size:9.5pt}
+table{font-size:10pt}
+h2{font-size:11.5pt;margin-bottom:1.2mm}
+h3{font-size:10.5pt}
+section{margin-top:2.2mm}
+th,td{padding:.9mm 1.7mm}
+.card,.namebox,.bubble,.note,.rule,.q{padding:1.7mm 2mm}
+.example,.badexample{padding:1.6mm 2mm}
+p{margin:.65mm 0}
+footer{font-size:9pt;margin-top:1.8mm}
+
+@media print{body{background:#fff}.page{margin:0}}
+@media screen and (max-width:700px){
+  .page{width:100%;height:auto;min-height:0;padding:22px;overflow:visible}
+  .cols,.cols3,.qgrid,.dialog,.workflow{grid-template-columns:1fr}
+  .chain{grid-template-columns:1fr}
+  .badge{position:static;display:inline-block;margin-top:7px}
+  h1{font-size:26px}
+  table{font-size:12px}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header>
+  <div class="eyebrow">DEUTSCH A2 · MODUL 2 · INFOGRAFIK</div>
+  <div class="badge">L32</div>
+  <h1>Kontakte und Missverständnisse</h1>
+  <div class="subtitle" lang="vi">Liên lạc và hiểu lầm</div>
+</header>
+
+<section>
+  <h2>01 · Nennen → ersetzen → klar bleiben <span class="vn">/ Nêu rõ → thay bằng đại từ → giữ rõ nghĩa</span></h2>
+  <div class="rule">
+    <b>Nenne eine Person oder Sache zuerst.</b> Danach kannst du passende Pronomen verwenden.
+    <span class="vn"> / Trước hết nêu rõ người hoặc vật, sau đó mới dùng đại từ.</span>
+    <div class="cols" style="margin-top:.8mm">
+      <div>
+        Das ist <b>Minh</b>. <span class="key subj">Er</span> kommt später.
+        Ich rufe <span class="key obj">ihn</span> an.
+      </div>
+      <div>
+        Hier ist <b>die Nachricht</b>. <span class="key subj">Sie</span> ist wichtig.
+        Bitte lies <span class="key obj">sie</span>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>02 · Wer handelt? Wen oder was betrifft die Handlung?</h2>
+  <table>
+    <tr><th>Nomen</th><th>Subjekt</th><th>Akkusativobjekt</th></tr>
+    <tr><td>der Kollege</td><td><span class="key subj">er</span></td><td><span class="key obj">ihn</span></td></tr>
+    <tr><td>die Freundin</td><td><span class="key subj">sie</span></td><td><span class="key obj">sie</span></td></tr>
+    <tr><td>das Handy</td><td><span class="key subj">es</span></td><td><span class="key obj">es</span></td></tr>
+    <tr><td>die Nachbarn</td><td><span class="key subj">sie</span></td><td><span class="key obj">sie</span></td></tr>
+  </table>
+  <p class="vn">Hỏi trước: ai hành động? Sau đó: hành động hướng đến ai/cái gì?</p>
+</section>
+
+<section>
+  <h2>03 · Unklare Bezüge vermeiden <span class="vn">/ Tránh đại từ không rõ nghĩa</span></h2>
+  <div class="badexample">
+    <b>Unklar:</b> Anna trifft Mai. <b>Sie</b> bringt <b>ihre</b> Tasche mit.<br>
+    <span class="vn">Không rõ: “sie” là Anna hay Mai? “ihre Tasche” thuộc về ai?</span>
+  </div>
+  <div class="example" style="margin-top:.7mm">
+    <b>Klar:</b> Anna trifft Mai. <b>Mai bringt Annas Tasche mit.</b><br>
+    <span class="vn">Rõ: Mai mang túi của Anna.</span>
+  </div>
+  <div class="note" style="margin-top:.7mm">
+    <b>Merke:</b> Gibt es zwei mögliche Personen oder Dinge? Dann lieber den Namen oder das Nomen wiederholen.<br>
+    <span class="vn">Nếu có hai khả năng, hãy lặp lại tên hoặc danh từ để tránh hiểu lầm.</span>
+  </div>
+</section>
+
+<section>
+  <h2>04 · Rückfragen helfen sofort <span class="vn">/ Hỏi lại để làm rõ ngay</span></h2>
+  <div class="qgrid">
+    <div class="q"><b>Wen meinst du genau?</b><br><span class="vn">Bạn muốn nói chính xác đến ai?</span></div>
+    <div class="q"><b>Meinst du Anna oder Mai?</b><br><span class="vn">Bạn nói Anna hay Mai?</span></div>
+    <div class="q"><b>Welche Nachricht meinst du?</b><br><span class="vn">Bạn nói tin nhắn nào?</span></div>
+    <div class="q"><b>Meinst du ihren Termin oder unseren Termin?</b><br><span class="vn">Bạn nói lịch hẹn của họ/cô ấy hay của chúng ta?</span></div>
+  </div>
+  <div class="note" style="margin-top:.7mm">
+    <b>Bestätigen:</b> Also: Wir treffen uns um zehn Uhr am Haupteingang, richtig?<br>
+    <span class="vn">Xác nhận lại thời gian và địa điểm để tránh hiểu lầm.</span>
+  </div>
+</section>
+
+<section>
+  <h2>05 · Besitz + Pronomen zusammen <span class="vn">/ Kết hợp sở hữu và đại từ</span></h2>
+  <div class="dialog">
+    <div class="bubble">
+      <strong>Ausgangssatz</strong><br>
+      Mein Rucksack ist bei Paul.<br>
+      <span class="vn">Ba lô của tôi đang ở chỗ Paul.</span>
+    </div>
+    <div class="bubble">
+      <strong>Wiederaufnahme</strong><br>
+      <span class="key subj">Er</span> bringt <span class="key obj">ihn</span> mit.<br>
+      <span class="vn">Paul mang nó đến.</span>
+    </div>
+  </div>
+  <div class="cols" style="margin-top:.7mm">
+    <div class="card blue">
+      <b>Person</b> → er / sie / ihn / sie<br>
+      <span class="vn">Người → đại từ chỉ người</span>
+    </div>
+    <div class="card gold">
+      <b>Besitz</b> → mein-, dein-, sein-, ihr-, unser- …<br>
+      <span class="vn">Sở hữu → gốc sở hữu phù hợp</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>06 · Vom Kontakt zur klaren Nachricht <span class="vn">/ Từ liên lạc đến thông tin rõ ràng</span></h2>
+  <div class="workflow">
+    <div class="step"><b>1 · Nennen</b><span class="vn">Nêu người/vật</span></div>
+    <div class="step"><b>2 · Pronomen</b><span class="vn">Dùng đại từ</span></div>
+    <div class="step"><b>3 · Besitz</b><span class="vn">Nói sở hữu</span></div>
+    <div class="step"><b>4 · Nachfragen</b><span class="vn">Hỏi lại</span></div>
+    <div class="step"><b>5 · Bestätigen</b><span class="vn">Xác nhận</span></div>
+  </div>
+</section>
+
+<div class="check">
+  <b>Dein Check:</b> Ist jedes Pronomen eindeutig? Ist klar, wem etwas gehört? Sind Ort und Zeit bestätigt?<br>
+  <span class="vn">Mỗi đại từ có rõ đối tượng không? Có rõ đồ thuộc về ai không? Đã xác nhận nơi và giờ chưa?</span><br>
+  <b>Jetzt du:</b> Erkläre ein kleines Missverständnis in 5–6 Sätzen und stelle zwei Rückfragen.
+</div>
+
+<footer>
+  <span>Deutsch A2 · L32 · Modulabschluss</span>
+  <span>1 / 1</span>
+</footer>
+
+</main>
+</body>
+</html>
